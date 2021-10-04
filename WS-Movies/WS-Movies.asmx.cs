@@ -90,6 +90,7 @@ namespace WS_Movies
                 if (deleted_movie != null)
                 {
                     moviesDB.movies.Remove(deleted_movie);
+                    moviesDB.SaveChanges();
                     return true;
                 }
 
